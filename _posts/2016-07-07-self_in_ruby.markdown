@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "***self* in Ruby**"
-date:   2016-07-07 14:01:54 +0000
+title:  "*self* in Ruby"
+date:   2016-07-07 10:01:54 -0400
 ---
 
 
