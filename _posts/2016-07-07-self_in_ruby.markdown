@@ -126,3 +126,4 @@ class BankAccount
 end
 ```
 In the end you can avoid using self in many cases, but it might be helpful to use it in some cases to increase readability of your code. And there are non-optional cases where you have to use self. 
+~aehmt
