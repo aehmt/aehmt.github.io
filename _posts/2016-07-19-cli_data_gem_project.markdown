@@ -4,7 +4,6 @@ title:  "CLI Data Gem Project"
 date:   2016-07-19 10:39:58 -0400
 ---
 
-
 [recent-earthquakes-gem](https://github.com/aehmt/recent-earthquakes-cli-gem)
 
 The program starts with 
@@ -25,6 +24,27 @@ file loads a ruby environment, creates a new instance of CLI class and calls
 .call
 ```
 method on it. 
+
+**Environment File**
+
+The file
+```
+recent_earthquakes.rb
+```
+loads the required files and gems.
+
+```
+require 'pry'
+require 'nokogiri'
+require 'open-uri' 
+require 'date'
+require 'colorize'
+
+require_relative "./recent_earthquakes/version"
+require_relative './recent_earthquakes/cli'
+require_relative './recent_earthquakes/earthquakes'
+require_relative './recent_earthquakes/scraper'
+```
 
 **CLI Class**
 
@@ -164,8 +184,6 @@ class RecentEarthquakes::Earthquake
 end
 
 ```
-
-
 
 
 [~aehmt](https://github.com/aehmt/)
