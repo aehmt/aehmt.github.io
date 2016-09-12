@@ -29,7 +29,7 @@ In your home directory open ```.bash_profile``` with your favourite editor. And 
 
 ```
 #adds pry to Gemfile and creates or overwrites .gitignore file with the content from an existing .gitignore file from home directory
-function cg {
+function cgit {
   echo ------------------------------------------------------------------------
   echo ------------------------------------------------------------------------
   echo _____________________CURRENT .gitignore CONTENT_________________________
@@ -55,7 +55,7 @@ echo ""
 echo ""
 if what .gitignore > /dev/null 2>&1;
 then
-  cg
+  cgit
   echo "Do you wish to overwrite .gitignore file?"
 
   select yn in "Yes" "No"; do
@@ -71,7 +71,7 @@ fi
   echo Done!
 }
 
-function dp {
+function dpry {
   grep -ilr 'binding.pry' * | xargs -I@ sed -i '' 's/binding.pry//g' @
 }
 
@@ -81,5 +81,5 @@ function dp {
 ...and then run ```apag```...
 Short for AddPryAndGitignore. You can change it to anything you like. 
 
-And one last thing, I decided to find out a way to delete a string from all files in current directory. dp fuction deletes all instances of ```binding.pry``` from the files in current directory.
+And one last thing, I decided to find out a way to delete a string from all files in current directory. ```dpry``` function deletes all instances of ```binding.pry``` from the files in current directory.
 
