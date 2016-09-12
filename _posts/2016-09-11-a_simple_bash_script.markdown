@@ -74,7 +74,6 @@ function apag {
 function dpry {
   grep -ilr 'binding.pry' * | xargs -I@ sed -i '' 's/binding.pry//g' @
 }
-
 ```
 
 ...and then run ```apag```...
