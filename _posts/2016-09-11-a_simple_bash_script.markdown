@@ -66,7 +66,7 @@ then
   done
 else
   cat ~/.gitignore > .gitignore
-  cg
+  cgit
 fi
   echo Done!
 }
