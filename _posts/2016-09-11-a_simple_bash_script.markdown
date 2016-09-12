@@ -40,41 +40,40 @@ function cgit {
 
 function apag {
 
-echo ------------------------------------------------------------------------
-echo ------------------------------------------------------------------------
-if grep -q -R "pry" Gemfile
-then
-  echo "                       Gemfile includes Pry!"
-else
-  echo "gem 'pry'" >> Gemfile
-  echo "                        Pry added to Gemfile"
-fi
-echo ------------------------------------------------------------------------
-echo ------------------------------------------------------------------------
-echo ""
-echo ""
-if what .gitignore > /dev/null 2>&1;
-then
-  cgit
-  echo "Do you wish to overwrite .gitignore file?"
+  echo ------------------------------------------------------------------------
+  echo ------------------------------------------------------------------------
+  if grep -q -R "pry" Gemfile
+  then
+    echo "                       Gemfile includes Pry!"
+  else
+    echo "gem 'pry'" >> Gemfile
+    echo "                        Pry added to Gemfile"
+  fi
+  echo ------------------------------------------------------------------------
+  echo ------------------------------------------------------------------------
+  echo ""
+  echo ""
+  if what .gitignore > /dev/null 2>&1; #Standard in, out, and error
+  then
+    cgit
+    echo "Do you wish to overwrite .gitignore file?"
 
-  select yn in "Yes" "No"; do
-    case $yn in
-      Yes ) cat ~/.gitignore > .gitignore; break;;
-      No ) break;;
-    esac
-  done
-else
-  cat ~/.gitignore > .gitignore
-  cgit
-fi
+    select yn in "Yes" "No"; do
+      case $yn in
+        Yes ) cat ~/.gitignore > .gitignore; break;;
+        No ) break;;
+      esac
+    done
+  else
+    cat ~/.gitignore > .gitignore
+    cgit
+  fi
   echo Done!
 }
 
 function dpry {
   grep -ilr 'binding.pry' * | xargs -I@ sed -i '' 's/binding.pry//g' @
 }
-
 
 ```
 
