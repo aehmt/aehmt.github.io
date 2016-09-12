@@ -29,7 +29,9 @@ In your home directory open ```.bash_profile``` with your favourite editor. And 
 
 ```
 #adds pry to Gemfile and creates or overwrites .gitignore file with the content from an existing .gitignore file from home directory
+
 function cgit {
+
   echo ------------------------------------------------------------------------
   echo ------------------------------------------------------------------------
   echo _____________________CURRENT .gitignore CONTENT_________________________
@@ -72,6 +74,7 @@ function apag {
 }
 
 function dpry {
+
   grep -ilr 'binding.pry' * | xargs -I@ sed -i '' 's/binding.pry//g' @
 }
 ```
