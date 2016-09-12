@@ -81,5 +81,5 @@ function dp {
 ...and then run ```apag```...
 Short for AddPryAndGitignore. You can change it to anything you like. 
 
-And one last thing, I decided to find out a way to delete a string from all files in current directory. dp fuction deletes all instances of 'binding.pry' from the files in current directory.
+And one last thing, I decided to find out a way to delete a string from all files in current directory. dp fuction deletes all instances of ```binding.pry``` from the files in current directory.
 
