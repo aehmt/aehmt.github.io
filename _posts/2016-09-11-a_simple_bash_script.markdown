@@ -9,7 +9,7 @@ date:   2016-09-11 15:48:44 -0400
 It is yet another time again for me to write a blog post.
 
 I had no ideas. 
-Then I thought why don't I do something with bash. A couple of weeks ago a fellow student([Fidel](https://unorientedobject.wordpress.com/)) asked me how to copy the content of existing file to another directory from bash. He needed to add .gitignore file to the lab he is currently working and he wanted to do it more efficently than creating a new file and copying and pasting the content. I didn't know how to do that back then. Then we asked around([Wu](https://irevived1.github.io/)) and found a better way to do it. You could use ```cat``` with ```>``` option. 
+Then I thought why don't I do something with bash. A couple of weeks ago a fellow student([Fidel](https://unorientedobject.wordpress.com/)) asked me how to copy the content of existing file to another directory from bash. He needed to add .gitignore file to the lab he is currently working and he wanted to do it more efficently than creating a new file and copying and pasting the content. I didn't know how to do that back then. Then we asked around and [Wu](https://irevived1.github.io/) found a better way to do it. You could use ```cat``` with ```>``` option. 
 
 ``` cat [existingfilename]>[newfilename] ``` or ```cat [existingfilename]>>[newfilename]```  if you'd like to append the content to an existing file. 
 
