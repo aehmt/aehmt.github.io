@@ -36,8 +36,3 @@ date:   2016-12-06 17:12:44 -0500
 * Remote controlled, real-time climbing safety monitoring
 * Designed active tail control system using proximity sensors
 
-
-* Generic list item
-* Generic list item
-* Generic list item
-
