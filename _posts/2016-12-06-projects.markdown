@@ -28,6 +28,6 @@ date:   2016-12-06 17:12:44 -0500
 
 [TancBot](https://www.youtube.com/watch?v=IrEqJdxzFeY) - Various-Surface Climbing Robot
 *  Built using 2-axis laser cutter, Arduino Nano, Xbee, Labview Programming Language
-+ Remote controlled, real-time climbing safety monitoring
-+ Designed active tail control system using proximity sensors
+*  Remote controlled, real-time climbing safety monitoring
+*  Designed active tail control system using proximity sensors
 
