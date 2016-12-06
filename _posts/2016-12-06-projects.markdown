@@ -6,28 +6,28 @@ date:   2016-12-06 17:12:44 -0500
 
 
 [Frello](https://protected-coast-18057.herokuapp.com/)  - Trello clone built on Ruby on Rails Frame Work and JQuery 
-+ Lets users create to-do lists and add tasks, add collaborators to the tasks
-+ Uses AJAX calls to update database
-+ Created drag and drop functionality using JQuery for adding collaborators and moving tasks between lists
-+ Uses OmniAuth for OAuth authentication with Facebook
-+ Serializes data through an internal Ruby on Rails API to communicate with front end
+*  Lets users create to-do lists and add tasks, add collaborators to the tasks
+*  Uses AJAX calls to update database
+*  Created drag and drop functionality using JQuery for adding collaborators and moving tasks between lists
+*  Uses OmniAuth for OAuth authentication with Facebook
+*  Serializes data through an internal Ruby on Rails API to communicate with front end
 
 [Draw Together](https://dt-react.herokuapp.com/) - An app that helps users to draw pictures collaboratively in real-time 
-+ Uses Ruby on Rails Api backend to persist drawings
-+ React.js with JSX for templating and web-components
-+ Implemented Socket.io for realtime event based communicaiton
+*  Uses Ruby on Rails Api backend to persist drawings
+*  React.js with JSX for templating and web-components
+*  Implemented Socket.io for realtime event based communicaiton
 
 [ThoughtDot](https://thoughtdot-e75ba.firebaseapp.com/) - An app that enables users to search nearby events 
-+ React.js with JSX for templating and web-components
-+ Uses Firebase authentication
+*  React.js with JSX for templating and web-components
+*  Uses Firebase authentication
 
 [Yumoo](https://github.com/aehmt/yumoo-app)  - An app that helps user to pick food for the mood they are in 
-+ Uses Google-Places Api and Yelp for restaurant recommendations
-+ Uses complex database associations
-+ Semantic UI front end
+*  Uses Google-Places Api and Yelp for restaurant recommendations
+*  Uses complex database associations
+*  Semantic UI front end
 
 [TancBot](https://www.youtube.com/watch?v=IrEqJdxzFeY) - Various-Surface Climbing Robot
-+ Built using 2-axis laser cutter, Arduino Nano, Xbee, Labview 
+*  Built using 2-axis laser cutter, Arduino Nano, Xbee, Labview Programming Language
 + Remote controlled, real-time climbing safety monitoring
 + Designed active tail control system using proximity sensors
 
