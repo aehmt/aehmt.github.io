@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "ReactJS     "
+date:   2016-12-06 22:09:18 +0000
+---
+
+
+  React (sometimes called React.js or ReactJS) is an open-source JavaScript library providing a view for data rendered as HTML.
+
+  It is maintained by Facebook, Instagram and a community of individual developers and corporations. According to JavaScript analytics service Libscore, React is currently being used on the websites of Netflix, Imgur, Bleacher Report, Feedly, Airbnb, SeatGeek, HelloSign, and others.
+
+  **Virtual DOM**
+
+  Another notable feature is the use of a "virtual DOM." React creates an in-memory data structure cache, computes the resulting differences, and then updates the browser's displayed DOM efficiently. This allows the programmer to write code as if the entire page is rendered on each change while the React libraries only render subcomponents that actually change.
+
+
+![](https://i.stack.imgur.com/S1vng.png)
+  **One-way data flow**
+
+  Properties, a set of immutable values, are passed to a component's renderer as properties in its HTML tag. A component cannot directly modify any properties passed to it, but can be passed callback functions that do modify values. This mechanism's promise is expressed as "properties flow down; actions flow up".
+
+
+
+  **JSX, React Components**
+
+
+React components are typically written in JSX, a JavaScript extension syntax allowing quoting of HTML and using HTML tag syntax to render subcomponents. HTML syntax is processed into JavaScript calls of the React library. Developers may also write in pure JavaScript. 
+
+Folder structure of react apps looks like this:
+```
+</MyNewApp/
+▸ node_modules/
+▾ src/
+  ▾ components/
+      search_bar.js
+      video_detail.js
+      video_list.js
+      video_list_item.js
+    index.js
+▾ style/
+    style.css
+▾ test/
+  ▾ components/
+      app_test.js
+    test_helper.js
+  index.html
+  npm-debug.log
+  package.json
+  README.md
+  webpack.config.js
+```
+
+Inside ```index.js```
+
+
+```
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import SearchBar from './components/search_bar';
+import YTSearch from 'youtube-api-search';
+import VideoList from './components/video_list'
+
+const API_KEY = '';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { videos: [] };
+
+  }
+  
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, (videos) => {
+      this.setState({ 
+        videos: videos,
+        selectedVideo: videos[0]
+      });
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <SearchBar onSearchTermChange={term => this.videoSearch(term)} />  
+        <videodetail video={this.state.selectedvideo}/>
+        <videolist 
+          onvideoselect={selectedvideo => this.setstate({selectedvideo}) }
+          videos={this.state.videos} />  
+      </div>
+    )
+  }
+}
+
+// take this component's generated html and put it on the page
+
+//to make an instance of an component jsx tags must be used, 
+ReactDOM.render(<App />, document.querySelector('.container'));
+```
+
+
+
