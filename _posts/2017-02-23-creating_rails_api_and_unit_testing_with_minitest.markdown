@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating Rails API and unit testing with Minitest"
-date:   2017-02-23 17:34:00 +0000
+date:   2017-02-23 12:34:01 -0500
 ---
 
 
